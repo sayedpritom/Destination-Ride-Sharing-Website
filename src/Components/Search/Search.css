@@ -1,0 +1,102 @@
+.search {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 90vw;
+    margin-top: 200px;
+}
+
+.search-form-container, .search-result-container {
+    width: 420px;
+    height: auto;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(235, 235, 235);
+}
+
+.search-form-container>form>p {
+    color: rgb(53, 53, 53);
+    font-weight: 600;
+    margin: 10px;
+}
+
+.search-form-container>form>input {
+    background-color: white;
+    height: 50px;
+    width: 375px;
+    padding: 10px;
+    border: none;
+    margin: 0 10px 10px 10px;
+    border-radius: 5px;
+}
+
+/* .search-form-container>form>input::placeholder {
+    background-color: white;
+    height: 50px;
+    width: 380px;
+    border: none;
+    margin: 0 10px 10px 10px;
+    border-radius: 5px;
+} */
+
+.search-form-container>form>input:nth-of-type(5) {
+    background-color: #ff6e40;
+    color: white;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.search-result-container>div:nth-of-type(1) {
+    height: 150px;
+    border-radius: 10px;
+    color: white;
+    font-weight: 700;
+    font-size: 32px;
+    padding: 20px;
+    background-color: #ff6e40;
+    margin-bottom: 30px;
+}
+.search-result-container>div>div>p::before {
+    content: "";
+    display: inline-block;
+    margin-right: 15px;
+    height: 14px;
+    width: 14px;
+    border-radius: 100px;
+    background-color: white;
+}
+#from-to-line::before {
+    content: "";
+    position: absolute;
+    margin-top: 29px;
+    margin-left: 7px;
+    height: 60px;
+    width: 1px;
+    background-color: white;
+}
+
+.vehicles {
+    display: flex;
+    background: white;
+    border-radius: 5px;
+    justify-content: space-around;
+    /* line-height: 30px; */
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.vehicles-Image>img {
+    width: 100px;
+    border-radius: 10px;
+    height: auto;
+}
+.vehicles>h6 {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.passengerIcon {
+    margin-right: 5px;
+}
