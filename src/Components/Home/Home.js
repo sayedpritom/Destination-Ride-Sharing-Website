@@ -11,11 +11,11 @@ const Home = () => {
     return (
         <div className="home">
 
-            <Container className="d-flex flex-wrap">
-                <Link to ={"/search/"+car}> <img src={Car} alt="" /> </Link>
-                <Link to ={"/search/"+bike}> <img src={Bike} alt="" /> </Link>
-                <Link to ={"/search/"+bus}> <img src={Bus} alt="" /> </Link>
-                <Link to ={"/search/"+train}> <img src={Train} alt="" /> </Link>
+            <Container className="row img-fluid">
+                <div className="col-lg-3 col-md-4 col-6 "><Link to ={"/search/"+car}> <img className="img-fluid" src={Car} alt="" /> </Link></div>
+                <div className="col-lg-3 col-md-4 col-6 "><Link to ={"/search/"+bike}> <img className="img-fluid" src={Bike} alt="" /> </Link></div>
+                <div className="col-lg-3 col-md-4 col-6 "><Link to ={"/search/"+bus}> <img className="img-fluid" src={Bus} alt="" /> </Link></div>
+                <div className="col-lg-3 col-md-4 col-6 "><Link to ={"/search/"+train}> <img className="img-fluid" src={Train} alt="" /> </Link></div>    
             </Container>
         </div>
     );

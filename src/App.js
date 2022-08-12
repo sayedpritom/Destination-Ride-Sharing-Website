@@ -35,7 +35,7 @@ function App() {
 
   useEffect(()=> {
     firebase.auth().onAuthStateChanged((user) => {
-      if (user.displayName) {
+      if (user?.displayName) {
         setCurrentUser(user)
         // ...
       } else {

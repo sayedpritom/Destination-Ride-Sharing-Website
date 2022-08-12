@@ -1,4 +1,4 @@
-import React from 'react'; 
+import React from 'react';
 import { Navbar, Nav, NavDropdown, Form, FormControl, Button, Container } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './HeaderNavbar.css'
@@ -11,7 +11,7 @@ const HeaderNavbar = () => {
     const [currentUser, setCurrentUser] = useContext(UserContext);
     console.log(currentUser);
     return (
-        <Container className="header">
+        <Container>
             <Navbar bg="none" expand="lg">
                 <Navbar.Brand> <Link to="/home"> <img className="img-fluid mainLogo" src={logo} alt="" /> </Link> </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -21,11 +21,12 @@ const HeaderNavbar = () => {
                         <Link to="/destination">Destination</Link>
                         <Link to="/blog">blog</Link>
                         <Link to="/contact">contact</Link>
-                        {currentUser.email ? <Link to="profile" id="userName">{currentUser.displayName}</Link> : <Link to="login" id="loginButton">login</Link>}
+                        {currentUser.email ? <Link to="/profile" id="userName">{currentUser.displayName}</Link> : <Link to="login" id="loginButton">login</Link>}
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>
         </Container>
+
     );
 };
 
